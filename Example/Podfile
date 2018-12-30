@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'APLPick_Example' do
+  pod 'APLPick', :path => '../'
+
+  target 'APLPick_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
