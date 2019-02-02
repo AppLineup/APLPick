@@ -1,0 +1,16 @@
+PODS:
+  - APLPick (0.1.0)
+
+DEPENDENCIES:
+  - APLPick (from `../`)
+
+EXTERNAL SOURCES:
+  APLPick:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  APLPick: bf1a383d9ab6f95b04a0b702fe682fcdbb46c025
+
+PODFILE CHECKSUM: f090728f866c278ae9def18bc93dee1a12c78e0e
+
+COCOAPODS: 1.5.3

@@ -7,18 +7,25 @@
 //
 
 import UIKit
+import APLPick
+import Photos
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        PhotoLibraryPicker.setup(with: self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBAction func pickButtonTapped(_ sender: UIButton) {
 
+        PhotoLibraryPicker.shared.setup()
+        PhotoLibraryPicker.shared.imagePicked = { info in
+            print(info)
+        }
+
+        PhotoLibraryPicker.shared.pickingCancelled = {
+            print("Cancelled")
+        }
+    }
 }
-

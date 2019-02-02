@@ -1,0 +1,6 @@
+framework module APLPick {
+  umbrella header "APLPick-umbrella.h"
+
+  export *
+  module * { export * }
+}

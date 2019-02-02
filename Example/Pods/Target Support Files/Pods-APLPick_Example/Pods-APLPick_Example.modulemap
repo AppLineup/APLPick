@@ -1,0 +1,6 @@
+framework module Pods_APLPick_Example {
+  umbrella header "Pods-APLPick_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
